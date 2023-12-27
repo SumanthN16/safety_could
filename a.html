@@ -147,42 +147,41 @@
         </button>
         
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Add Observation</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Form for entering observation details -->
-                        <form id="observationForm">
-                            <label for="projectName">Name of Project:</label>
-                            <input type="text" id="projectName" name="projectName" required class="form-control mb-2">
+       <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Observation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Form for entering observation details -->
+                <form id="observationForm">
+                    <label for="projectName">Name of Project:</label>
+                    <input type="text" id="projectName" name="projectName" required class="form-control mb-2">
 
-                            <label for="activityType">Activity Type:</label>
-                            <input type="text" id="activityType" name="activityType" required class="form-control mb-2">
+                    <label for="activityType">Activity Type:</label>
+                    <input type="text" id="activityType" name="activityType" required class="form-control mb-2">
 
-                            <label for="location">Location:</label>
-                            <input type="text" id="location" name="location" required class="form-control mb-2">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required class="form-control mb-2">
 
-                            <label for="observation">Description of safety Observation:</label>
-                            <textarea type="text" id="observation" name="observation" required
-                                class="form-control mb-2"></textarea>
+                    <label for="observation">Description of safety Observation:</label>
+                    <textarea type="text" id="observation" name="observation" required class="form-control mb-2"></textarea>
 
-                            <label for="correctiveAction">Corrective Action/Preventive Action:</label>
-                            <textarea type="text" id="correctiveAction" name="correctiveAction" required
-                                class="form-control mb-2"></textarea>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <!-- Button to submit the form -->
-                        <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
-                    </div>
-                </div>
+                    <label for="correctiveAction">Corrective Action/Preventive Action:</label>
+                    <textarea type="text" id="correctiveAction" name="correctiveAction" required class="form-control mb-2"></textarea>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <!-- Button to submit the form -->
+                <button type="button" class="btn btn-primary" onclick="submitForm()">Submit</button>
             </div>
         </div>
+    </div>
+</div>
+
     </div>
 
     <!-- Bootstrap JS and Popper.js (optional) -->
